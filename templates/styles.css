@@ -1,0 +1,279 @@
+/*Styling login Page*/
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background: #EAECEE;
+}
+
+form {
+	top: 20%;
+}
+h1 {
+	padding: 15px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: #34495E;
+}
+form {
+	background: #FDFEFE;
+	width:340px;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	height:350px;
+	top:41%;	
+	
+}
+.form_data {
+	
+	text-align: center;
+	height: 450px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	padding: 20px;
+	font-size: 10px;
+	color: #F8F9F9;
+	width: 300px;	
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+}
+
+.header {
+	font-size: 20px;
+}
+
+input {
+	margin: 5px;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #CCD1D1;
+	padding: 7px;
+	padding-bottom: 10px;
+	color: #34495E;
+	width: 250px;
+	outline: none; 
+}
+.pass{
+	color: #34495E;
+	text-decoration: none
+}
+input:focus {
+	outline: none;
+}
+
+::-moz-input-placeholder{
+	color: #34495E;
+}
+.btn {
+	color: #F8F9F9;
+	border: none;
+}
+.button { 
+	text-align: center;
+	background: #34495E;
+	padding: 0.1px;
+	margin: 20px;
+	border: 0;
+	color: #F8F9F9;
+}
+
+
+.new_acc {
+	background: #FDFEFE;
+	text-align: center;
+	height: 44px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	font-size: 15px;
+	width: 300px;	
+	left: 50%;
+	top: 92%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	text-align: center;
+	color: #34495E;
+	vertical-align: middle;
+	line-height: 0px;
+}
+
+.acc {
+	color: #85C1E9;
+	text-decoration: none;
+}
+.login_acc {
+	background: #FDFEFE;
+	text-align: center;
+	height: 360px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: relativex`;
+	padding: 20px;
+	font-size: 10px;
+	color: #F8F9F9;
+	width: 300px;	
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+}
+
+/*SIGN UP PAGE*/
+.create_acc {
+	background: #FDFEFE;
+	text-align: center;
+	height: 450px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	padding: 20px;
+	font-size: 10px;
+	color: #F8F9F9;
+	width: 300px;	
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login {
+	background: #FDFEFE;
+	text-align: center;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	font-size: 15px;
+	width: 300px;	
+	left: 50%;
+	top: 109%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	text-align: center;
+	color: #34495E;
+	vertical-align: middle;
+	line-height: 0px;
+}
+/*Forgot Account*/
+.forgot_page {
+	height: 400px;
+}
+.forgot {
+	text-align: center;
+	height: 300px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	padding: 20px;
+	font-size: 15px;
+	color: #34495E;
+	width: 300px;	
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+}
+.email_link {
+	text-align:center;
+	color: #34495E;
+	padding-top: 1px;
+	padding-bottom: 20px;
+}
+.go_to_login {
+	background: #FDFEFE;
+	text-align: center;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	font-size: 15px;
+	width: 300px;	
+	left: 50%;
+	top: 113%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	text-align: center;
+	color: #34495E;
+	vertical-align: middle;
+	line-height: 0px;
+}
+/*CONFIRMATION EMAIL PAGE*/
+.confirm {
+	background: #FDFEFE;
+	text-align: center;
+	height: 200px;
+	display: inline-block;
+	border: 1px solid #D6DBDF;
+	position: absolute;
+	padding: 20px;
+	font-size: 10px;
+	color: #F8F9F9;
+	width: auto;	
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+}
+.confirm_email {
+	text-align:center;
+	color: #34495E;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	font-size: 17px;
+}
+.confirm_acc {
+	background: #FDFEFE;
+	text-align: center;
+	height: 90px;
+	display: inline-block;
+	border: none;
+	position: absolute;
+	padding: 20px;
+	font-size: 10px;
+	color: #F8F9F9;
+	width: 300px;	
+	left: 50%;
+	top: 72%;
+	transform: translate(-50%, -50%);
+}
+
+/*end of confirmation ema page*/
+.login_btn {
+	background: #EAECEE;
+	display: inline-block;
+	height: 28px;
+	transform: translate(400%, -100%);
+	width: 10%;
+	padding-top: 5px;
+	position: relative;
+	left: 315px;
+}
+.lgn_btn {
+	float: right;
+	color: #34495E;
+	text-decoration: none;
+}
+
+.errors {
+    margin-left: 20px;
+    text-align: left;
+    color: red;
+    font-size: 11.5px;
+}
+.login_errors {
+    text-align: center;
+    color: red;
+}
+
+/*confirm form page*/
+
+.bodies {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 55%;
+	height: 450px;
+	left: 50%;
+}
