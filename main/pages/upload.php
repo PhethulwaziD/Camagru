@@ -5,6 +5,7 @@
 		header('Location: ../../index.php');
 	}
 	if (isset($_POST['upload'])){
+		echo "helllo";
 		//$_FILE is a supergloabal, stores file information in  the form of an assoc arra
 		//Here I am assigning that $_FILE array to var $file
 		$file  = $_FILES['file'];
@@ -17,7 +18,7 @@
 		$file_type = $_FILES['file']['name'];
 		$file_extension = explode('.', $file_name);
 		$file_ext = strtolower(end($file_extension));
-
+		echo "helllo";
 		$allowed_ext = array('jpg', 'jpeg', 'png', 'gif');
 		if (in_array($file_ext, $allowed_ext)) {
 			if ($file_error === 0){

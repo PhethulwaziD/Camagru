@@ -1,9 +1,9 @@
 <?php
-	$db_name = "camagru_";
+	$db_name = "camagru";
 	$db_sever = "mysql:host=localhost; dbname=".$db_name;
 	$db_host_ = "mysql:host=localhost";
 	$db_user = "root";
-	$db_password = "password";
+	$db_password = "";
 	try {
 		$db = new PDO($db_host_, $db_user, $db_password);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

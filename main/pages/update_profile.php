@@ -46,16 +46,19 @@
 					$stmt = $pdo->prepare($sql);
 					$stmt->execute([':name' => $name,':id' => $id]);
 					$_SESSION['name'] = $name;
+					header("Location: profile_page.php");
 				} elseif ($user['username'] !== $new_username){
 					$sql = 'UPDATE camagru_users SET username = :username WHERE id = :id';
 					$stmt = $pdo->prepare($sql);
 					$stmt->execute([':username' => $new_username,':id' => $id]);
 					$_SESSION['username'] = $new_username;
+					header("Location: profile_page.php");
 				} elseif ($user['email'] !== $email){
 					$sql = 'UPDATE camagru_users SET email = :email WHERE id = :id';
 					$stmt = $pdo->prepare($sql);
 					$stmt->execute([':email' => $email,':id' => $id]);
 					$_SESSION['email'] = $email;
+					header("Location: profile_page.php");
 				}
 			}
 		}

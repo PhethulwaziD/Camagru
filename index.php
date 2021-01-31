@@ -7,54 +7,55 @@
 	<meta name="viewport" content="width=device-width, intiail-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main/templates/styles.css">
 	<title>camagru_home page</title>
-	<title></title>
-</head>
 	<body>
-		<header>
-			Camagru
+		<header class="showcase" id="index-header">
+			<a href="" class="logo" id="index-logo">Camagru</a>
+			<div id="index-toggle" class="menu-toggle">+</div>
+			<nav>
+				<ul>
+					<li><a id="index-links" href="index.php">Home</a></li>
+					<li><a id="index-links" href="pages/sign_up_page.php">Sign Up</a></li>
+					<li><a id="index-links" href="pages/login_page.php">Sign In</a></li>
+					<li><a id="index-links" href="pages/forgot_password_page.php">Forgot password</a></li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
 		</header>
-		<nav>
-			<ul>
-				<li>
-					<a href="pages/login_page.php">Login</a>
-				</li>
-				<li>
-					<a href="pages/sign_up_page.php">Sign up</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="gallery">
-				 <?php 
-					$sql = 'SELECT * FROM gallery';
-					$stmt = $pdo->prepare($sql);
-					$stmt->execute();
-					$total_records = $stmt->rowCount();
-					$records_per_page = 12;
-					$page = '';
-					if (!isset($_GET['page'])) {
-						$page = 1;
-					} else {
-						if (is_numeric($_GET['page'])) {
-							$page = $_GET['page'];
-						} else {
-							$page = 1;
-						}
-					}
-						$total_pages = ceil($total_records/$records_per_page);
-						$start_from = ($page-1) * $records_per_page;
-						$sql = "SELECT * FROM gallery ORDER BY id DESC LIMIT $start_from, $records_per_page";
+		<div class="upcoming-container">
+			<div class="upcoming-images">
+					<?php 
+						$sql = 'SELECT * FROM gallery';
 						$stmt = $pdo->prepare($sql);
 						$stmt->execute();
-					while ($pics = $stmt->fetch()) { ?>
-			<div class="container">
-				<a href="main/pages/comments_page.php?id=<?php echo $pics['id']; ?>">
-					<div style= "background-image: url(<?php echo "main/pages/uploads/".$pics['directory']; ?>);">	
-					</div>
-				</a>
+						$total_records = $stmt->rowCount();
+						$records_per_page = 12;
+						$page = '';
+						if (!isset($_GET['page'])) {
+							$page = 1;
+						} else {
+							if (is_numeric($_GET['page'])) {
+								$page = $_GET['page'];
+							} else {
+								$page = 1;
+							}
+						}
+							$total_pages = ceil($total_records/$records_per_page);
+							$start_from = ($page-1) * $records_per_page;
+							$sql = "SELECT * FROM gallery ORDER BY id DESC LIMIT $start_from, $records_per_page";
+							$stmt = $pdo->prepare($sql);
+							$stmt->execute();
+						while ($pics = $stmt->fetch()) { ?>
+				<div class="img-wrapper" style="background-image: url(<?php echo "main/pages/uploads/".$pics['directory']; ?>);">
+					<div class="description">
+						<div class="desc-content">
+								
+						</div>
+					</div>	
+				</div>
+					<?php } ?>
 			</div>
-				<?php }
-				?>
-	</section>
+		</div>
+	</div>
 	<br />
 	<div class="pagination">
 		<?php for ($i = 1; $i <= $total_pages; $i++) {
@@ -62,4 +63,5 @@
 		}?>
 	</div>
 </body>
+	<script type="text/javascript" src="./main/pages/script.js"></script>
 </html>

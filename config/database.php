@@ -1,7 +1,7 @@
  <?php
-	$dbname = "camagru_";
+	$dbname = "camagru";
 	$dbuser = "root";
-	$dbpass = "password";
+	$dbpass = "";
 	$dbhost = "localhost";
 
 	try{

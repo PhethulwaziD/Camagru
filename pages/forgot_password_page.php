@@ -7,9 +7,22 @@
 <head>
 	<meta name="viewport" content="width=device-width, intiail-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../templates/styles.css">
-	<title></title>
-</head>
+	<link rel="stylesheet" type="text/css" href="../main/templates/styles.css">
+	<title>camagru_home page</title>
 <body>
+	<header class="showcase" id="index-header">
+		<a href="" class="logo" id="index-logo">Camagru</a>
+		<div id="index-toggle" class="menu-toggle">+</div>
+		<nav>
+			<ul>
+				<li><a id="index-links" href="../index.php">Home</a></li>
+				<li><a id="index-links" href="sign_up_page.php">Sign Up</a></li>
+				<li><a id="index-links" href="login_page.php">Sign In</a></li>
+				<!--<li><a id="index-links" href="forgot_password_page.php">Forgot password</a></li>-->
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
 	<div class="forgot_page">
 		<form class="forgot" action="forgot_password_page.php" method="POST">
 			<h1>Locked out?</h1>
@@ -22,12 +35,9 @@
 			<div class="button">
 				<input type="submit" name="send" value="send" class="btn">
 			</div>
-				<p><a class="acc" href="sign_up_page.php">Sign up</a></p>
-				<div class="go_to_login"  onclick="location.href='index.php';"	>
-					<p>Go back to: <a class="acc" href="login_page.php">Login</a></p>
-				</div>
 			</form>
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="../main/pages/script.js"></script>
 </html>

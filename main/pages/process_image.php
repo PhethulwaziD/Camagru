@@ -13,6 +13,7 @@
         //var_dump($_POST);
     }
     if (!empty($image)){
+    
             $image_name = $username.uniqid().".png";
             $image_path = "uploads/".$image_name;
             $image_url = str_replace("data:image/png;base64,", "", $image);

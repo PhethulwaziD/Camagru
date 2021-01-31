@@ -28,4 +28,5 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="../main/pages/script.js"></script>
 </html>

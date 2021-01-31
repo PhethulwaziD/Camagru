@@ -1,4 +1,4 @@
-(function () {
+
 		var video = document.getElementById('video'),
 					upload = document.getElementById('upload'),
 					canvas = document.getElementById('canvas'),
@@ -79,21 +79,21 @@
 		  }
 
 		upload.addEventListener('click', function(){
+			console.log("hello")
 	        var photo = canvas.toDataURL('image/png');
 			var filter = cover.toDataURL('image/png');
-			console.log(filter);
+			//console.log(filter);
 			if (con == 1){
 				const xhr = new XMLHttpRequest();
 				xhr.onload  = function () {
-					const response = document.getElementById('response');
-					response.innerHTML = this.responseText;
+					console.log("Done");
 				};
 				let data = "image="+photo+"&filter="+filter;
+				console.log(data);
 				xhr.open("POST", "process_image.php");
 				xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				xhr.send(data);
-				window.location.reload(true);
+				//window.location.reload(true);
 			}
 	    });
 
-})();

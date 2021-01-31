@@ -10,56 +10,57 @@ body {
 form {
 	top: 20%;
 }
-h1 {
-	padding: 15px;
-	padding-bottom: 5px;
-	text-align: center;
-	color: #34495E;
-}
+
+
 form {
 	background: #FDFEFE;
 	width:340px;
-	left:50%;
-	position:absolute;
-	transform: translate(-50%, -50%);
 	display: inline-block;
 	height:350px;
 	top:41%;	
 	
 }
 .form_data {
-	
 	text-align: center;
-	height: 450px;
-	display: inline-block;
-	border: 1px solid #D6DBDF;
-	position: absolute;
-	padding: 20px;
-	font-size: 10px;
-	color: #F8F9F9;
-	width: 300px;	
-	left: 50%;
-	top: 45%;
-	transform: translate(-50%, -50%);
+    display: inline-block;
+    font-size: 15px;
+    color: #17202A;
+
+    border-radius: 2rem;
 }
 
 .header {
 	font-size: 20px;
+    width: 100%;
+	display: flex;
+	
 }
 
 input {
 	margin: 5px;
 	background: transparent;
-	border: 0;
+	border: none;
 	border-bottom: 1px solid #CCD1D1;
 	padding: 7px;
 	padding-bottom: 10px;
-	color: #34495E;
+	color: #17202A;
 	width: 250px;
 	outline: none; 
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+
 .pass{
-	color: #34495E;
+	color: #17202A;
 	text-decoration: none
 }
 input:focus {
@@ -67,7 +68,7 @@ input:focus {
 }
 
 ::-moz-input-placeholder{
-	color: #34495E;
+	color: #17202A;
 }
 .btn {
 	color: #F8F9F9;
@@ -75,7 +76,7 @@ input:focus {
 }
 .button { 
 	text-align: center;
-	background: #34495E;
+	background: #17202A;
 	padding: 0.1px;
 	margin: 20px;
 	border: 0;
@@ -97,7 +98,7 @@ input:focus {
 	transform: translate(-50%, -50%);
 	padding: 20px;
 	text-align: center;
-	color: #34495E;
+	color: #17202A;
 	vertical-align: middle;
 	line-height: 0px;
 }
@@ -109,34 +110,27 @@ input:focus {
 .login_acc {
 	background: #FDFEFE;
 	text-align: center;
-	height: 360px;
+	height: 300px;
 	display: inline-block;
-	border: 1px solid #D6DBDF;
-	position: relativex`;
-	padding: 20px;
-	font-size: 10px;
-	color: #F8F9F9;
-	width: 300px;	
-	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 15px;
+    color: #17202A;
+    width: 300px;
+    top: 60%;
+    border-radius: 2rem;
 }
 
 /*SIGN UP PAGE*/
 .create_acc {
-	background: #FDFEFE;
 	text-align: center;
-	height: 450px;
-	display: inline-block;
-	border: 1px solid #D6DBDF;
-	position: absolute;
-	padding: 20px;
-	font-size: 10px;
-	color: #F8F9F9;
-	width: 300px;	
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+    height: 457px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 15px;
+    color: #17202A;
+    width: 300px;
+    top: 60%;
+    border-radius: 2rem;
 }
 
 .login {
@@ -153,31 +147,34 @@ input:focus {
 	transform: translate(-50%, -50%);
 	padding: 20px;
 	text-align: center;
-	color: #34495E;
+	color: #17202A;
 	vertical-align: middle;
 	line-height: 0px;
 }
 /*Forgot Account*/
 .forgot_page {
-	height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	height: 85vh;
 }
+
 .forgot {
 	text-align: center;
 	height: 300px;
 	display: inline-block;
-	border: 1px solid #D6DBDF;
-	position: absolute;
 	padding: 20px;
 	font-size: 15px;
-	color: #34495E;
+	color: #17202A;
 	width: 300px;	
-	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);	
+	border-radius: 2rem;
 }
+
 .email_link {
 	text-align:center;
-	color: #34495E;
+	color: #17202A;
 	padding-top: 1px;
 	padding-bottom: 20px;
 }
@@ -195,7 +192,7 @@ input:focus {
 	transform: translate(-50%, -50%);
 	padding: 20px;
 	text-align: center;
-	color: #34495E;
+	color: #17202A;
 	vertical-align: middle;
 	line-height: 0px;
 }
@@ -217,7 +214,7 @@ input:focus {
 }
 .confirm_email {
 	text-align:center;
-	color: #34495E;
+	color: #17202A;
 	padding-top: 1px;
 	padding-bottom: 20px;
 	font-size: 17px;
@@ -251,11 +248,12 @@ input:focus {
 }
 .lgn_btn {
 	float: right;
-	color: #34495E;
+	color: #17202A;
 	text-decoration: none;
 }
 
 .errors {
+	height: 10px;
     margin-left: 20px;
     text-align: left;
     color: red;
@@ -276,4 +274,11 @@ input:focus {
 	top: 55%;
 	height: 450px;
 	left: 50%;
+}
+
+.active {
+	display:block
+}
+.rotate {
+	transform: rotate(45deg);
 }

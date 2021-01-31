@@ -51,7 +51,8 @@
 <!DOCTYPE html>
 <html>
 	<?php include_once('header.html'); ?>
-	<section class="imageview">
+	<div class="upcoming-container">
+		<div class="upcoming-images booth">
 		 		<?php
 					 $image_id = htmlspecialchars($_GET['id']);
 					if (!is_numeric($image_id))
@@ -64,7 +65,7 @@
 				?>
 					<div class="comments">
 					<h4 class="name"><?php echo $pics['username']?></h4>
-					<div style= "background-image: url(<?php echo "uploads/".$pics['directory']; ?>);">
+					<div class="main-image" style= "background-image: url(<?php echo "uploads/".$pics['directory']; ?>);">
 					<form action="comments_page.php?id=<?php echo $image_id; ?>" method="POST">
 						<button class="delete" type="submit" name="delete">X</button>
 					</form>
@@ -83,9 +84,15 @@
 							$stmt = $pdo->prepare($sql);
 							$stmt->execute([':imageid' => $imageid]);
 							while ($comments = $stmt->fetch()) { ?>
-							<h4 class="names"><?php echo $comments['username']; ?></h4>
-							<p class="commenting"><?php echo $comments['comment']; ?></p>
+							<div class="comment-wrapper">
+								<h4 class="names"><?php echo $comments['username']; ?></h4>
+								<p class="commenting"><?php echo $comments['comment']; ?></p>
+							</div>
+							
 						<?php }?>
 				</div>
-	</section>
+			</div>
+		</div>
 </body>
+<script type="text/javascript" src="script.js"></script>
+</html>
